@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="First test suite">
+    <test name="lesson1 tests">
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="default tests"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <packages>
+            <package name="lesson1.*"/>
+        </packages>
+    </test>
+</suite>
