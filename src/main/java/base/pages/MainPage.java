@@ -1,5 +1,6 @@
 package base.pages;
 
+import base.config.PageTools;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
@@ -11,9 +12,11 @@ import static base.helpers.CustomConditions.*;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.*;
 
-public class MainPage {
+public class MainPage extends PageTools {
     private final String appLogo = "//div[@class='app_logo']";
     private final String itemHeaders = "//div[@class='inventory_item_name ']";
+    private final String itemHeadersByID = "(//div[@class='inventory_item_name '])[%d]";
+    private final String itemHeadersByName = "//div[text()='%s']";
     private final String burgerMenuButton = "//div[@class='bm-burger-button']";
     private final String filterButton = "//select[@class='product_sort_container']";
     private final String shoppingCart = "//a[@class='shopping_cart_link']";
@@ -39,13 +42,25 @@ public class MainPage {
     public void selectFilterOption(String filterOption) {
         $(byXpath(filterButton)).shouldBe(clickableCondition).selectOption(filterOption);
     }
-    public void clickShoppingCartButton (){
+
+    public void clickShoppingCartButton() {
         $(byXpath(shoppingCart)).shouldBe(clickableCondition).click();
     }
-    public void clickAddToCartButton(){
+
+    public void clickAddToCartButton() {
         $(byXpath(addToCart)).shouldBe(clickableCondition).click();
     }
-    public void clickLogoutButton (){
+
+    public void clickLogoutButton() {
         $(byXpath(logoutButton)).shouldBe(clickableCondition).click();
+    }
+
+    public void clickItemHeaderByID(int id) {
+        shouldBeByXpath(Condition.clickable, itemHeadersByID, id);
+        clickByXpath(itemHeadersByID, id);
+    }
+    public void clickItemHeaderByName(String name) {
+        shouldBeByXpath(Condition.clickable, itemHeadersByName, name);
+        clickByXpath(itemHeadersByName, name);
     }
 }

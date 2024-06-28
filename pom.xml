@@ -14,6 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenide>7.3.2</selenide>
         <testng>7.10.2</testng>
+        <slf4j>2.0.13</slf4j>
+        <logback>1.5.6</logback>
     </properties>
     <dependencies>
         <dependency>
@@ -27,5 +29,22 @@
             <artifactId>selenide</artifactId>
             <version>${selenide}</version>
         </dependency>
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide-testng</artifactId>
+            <version>${selenide}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j}</version>
+        </dependency>
     </dependencies>
+
 </project>

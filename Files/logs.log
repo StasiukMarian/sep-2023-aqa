@@ -1,0 +1,61 @@
+22:01:34 | INFO | Utils:112                                | [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IntelliJIdea2023.2\temp-testng-customsuite.xml
+
+22:01:34 | INFO | SimpleReport:57                          | Report for configuration
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
++----------------------+---------+------------+------------+
+
+22:01:35 | INFO | WebDriverThreadLocalContainer:135        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+22:01:35 | INFO | FileHelper:46                            | Creating folder: D:\IdeaProjects\sep-2023-aqa\build\downloads\1719601295076_9412_1
+22:01:37 | INFO | WebDriverFactory:142                     | BrowserName=chrome Version=126.0.6478.126 Platform=windows
+22:01:37 | INFO | WebDriverFactory:75                      | Selenide v. 7.3.2
+22:01:37 | INFO | WebDriverFactory:136                     | Selenium WebDriver v. 4.21.0 build revision: 79ed462ef4
+22:01:37 | INFO | CreateDriverCommand:74                   | Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (f6ad9d149b6356823fb9fb6c7a40f62d), downloadsFolder: D:\IdeaProjects\sep-2023-aqa\build\downloads\1719601295076_9412_1
+22:01:37 | INFO | DisposablesRegistry:30                   | Register WebDriverInstance[config=StaticConfig, webDriver=ChromeDriver: chrome on windows (f6ad9d149b6356823fb9fb6c7a40f62d), proxy=null, downloadsFolder=D:\IdeaProjects\sep-2023-aqa\build\downloads\1719601295076_9412_1] in 1 [size=1]
+22:01:37 | INFO | DisposablesRegistry:32                   | Add shutdown hook in 1 [size=1]
+22:01:37 | INFO | WebDriverThreadLocalContainer:178        | Browser will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on windows (f6ad9d149b6356823fb9fb6c7a40f62d)
+22:01:38 | INFO | SimpleReport:57                          | Report for setUp
++----------------------+----------------------------+------------+------------+
+| Element              | Subject                    | Status     | ms.        |
++----------------------+----------------------------+------------+------------+
+| open                 | https://www.saucedemo.com/ | PASS       | 3211       |
+|   webdriver          | create()                   | PASS       | 2344       |
++----------------------+----------------------------+------------+------------+
+
+22:01:44 | INFO | SimpleReport:57                          | Report for test
++-------------------------------------------------+----------------------------------------------------------------------+------------+------------+
+| Element                                         | Subject                                                              | Status     | ms.        |
++-------------------------------------------------+----------------------------------------------------------------------+------------+------------+
+| By.xpath: //input[@placeholder='Username']      | should be(: visible and empty: attribute value="" and exact text "") | PASS       | 189        |
+| By.xpath: //input[@placeholder='Username']      | append(standard_user)                                                | PASS       | 184        |
+| [placeholder="Password"]                        | should be(: visible and empty: attribute value="" and exact text "") | PASS       | 79         |
+| [placeholder="Password"]                        | append(secret_sauce)                                                 | PASS       | 157        |
+| By.xpath: //input[@value='Login']               | is(exist)                                                            | PASS       | 41         |
+| By.xpath: //input[@value='Login']               | should be(clickable: interactable and enabled)                       | PASS       | 52         |
+| By.xpath: //input[@value='Login']               | click()                                                              | PASS       | 198        |
+| By.xpath: //div[text()='Sauce Labs Bike Light'] | should be(clickable: interactable and enabled)                       | PASS       | 59         |
+| By.xpath: //div[text()='Sauce Labs Bike Light'] | click()                                                              | PASS       | 151        |
++-------------------------------------------------+----------------------------------------------------------------------+------------+------------+
+
+22:01:44 | INFO | SimpleReport:57                          | Report for cleanWebDriver
++----------------------+-------------+------------+------------+
+| Element              | Subject     | Status     | ms.        |
++----------------------+-------------+------------+------------+
+| clearCookies         |             | PASS       | 28         |
+| refresh              |             | PASS       | 185        |
+| open                 | about:blank | PASS       | 44         |
++----------------------+-------------+------------+------------+
+
+22:01:44 | INFO | CloseDriverCommand:27                    | Hold browser open: 1 -> ChromeDriver: chrome on windows (f6ad9d149b6356823fb9fb6c7a40f62d)
+22:01:44 | INFO | DisposablesRegistry:40                   | Unregister WebDriverInstance[config=StaticConfig, webDriver=ChromeDriver: chrome on windows (f6ad9d149b6356823fb9fb6c7a40f62d), proxy=null, downloadsFolder=D:\IdeaProjects\sep-2023-aqa\build\downloads\1719601295076_9412_1] in 1 [size=0]
+22:01:44 | INFO | SimpleReport:57                          | Report for tearDown
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| webdriver            | close() | PASS       | 10         |
++----------------------+---------+------------+------------+
+
+22:01:44 | INFO | DisposablesRegistry:66                   | Run cleanup: size=0
+22:01:44 | INFO | DisposablesRegistry:68                   | Finished cleanup

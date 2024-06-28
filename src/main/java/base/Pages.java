@@ -3,12 +3,12 @@ package base;
 import base.pages.*;
 
 public class Pages {
-    public static LoginPage loginPage;
-    public static MainPage mainPage;
-    public static ShoppingCartPage shoppingCartPage;
-    public static CheckoutYourInformationPage checkoutYourInformationPage;
-    public static CheckoutOverviewPage checkoutOverviewPage;
-    public static CheckoutCompletePage checkoutCompletePage;
+    private static LoginPage loginPage;
+    private static MainPage mainPage;
+    private static ShoppingCartPage shoppingCartPage;
+    private static CheckoutYourInformationPage checkoutYourInformationPage;
+    private static CheckoutOverviewPage checkoutOverviewPage;
+    private static CheckoutCompletePage checkoutCompletePage;
 
     public static LoginPage loginPage() {
         if (loginPage == null) {
