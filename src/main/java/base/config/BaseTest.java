@@ -12,7 +12,6 @@ public class BaseTest {
 
     @BeforeClass
     public void configuration() {
-        Configuration.reportsFolder = "build/reports/tests";
         Configuration.browser = "chrome"; // edge, firefox
         Configuration.browserSize = "1519x826";
         Configuration.holdBrowserOpen = false;
