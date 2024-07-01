@@ -5,6 +5,7 @@ import base.pages.*;
 public class Pages {
     private static LoginPage loginPage;
     private static MainPage mainPage;
+    private static DetailsItemPage detailsItemPage;
     private static ShoppingCartPage shoppingCartPage;
     private static CheckoutYourInformationPage checkoutYourInformationPage;
     private static CheckoutOverviewPage checkoutOverviewPage;
@@ -22,6 +23,13 @@ public class Pages {
             mainPage = new MainPage();
         }
         return mainPage;
+    }
+
+    public static DetailsItemPage detailsItemPage() {
+        if (detailsItemPage == null) {
+            detailsItemPage = new DetailsItemPage();
+        }
+        return detailsItemPage;
     }
 
     public static ShoppingCartPage shoppingCartPage() {
@@ -51,4 +59,5 @@ public class Pages {
         }
         return checkoutCompletePage;
     }
+
 }

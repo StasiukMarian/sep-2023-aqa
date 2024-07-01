@@ -1,8 +1,11 @@
 package base.config;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebElementCondition;
+
+import java.util.List;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -29,6 +32,17 @@ public class PageTools {
         return $(byXpath(locatorFormatter(locator, args))).is(Condition.exist);
     }
 
+    protected String getElementTextByXPath(String locator, Object... args) {
+        return $(byXpath(locatorFormatter(locator, args))).text();
+    }
+
+    protected List<String> getElementsTextByXPath(String locator, Object... args) {
+        return $$(byXpath(locatorFormatter(locator, args))).texts();
+    }
+
+    protected ElementsCollection getElementsByXPath(String locator, Object... args) {
+        return $$(byXpath(locatorFormatter(locator, args)));
+    }
     // BY ID
 
     protected SelenideElement shouldBeById(WebElementCondition condition, String locator, Object... args) {
