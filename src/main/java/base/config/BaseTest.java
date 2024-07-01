@@ -17,7 +17,7 @@ public class BaseTest {
         Configuration.holdBrowserOpen = false;
         Configuration.timeout = 10000;
         Configuration.pageLoadTimeout = 10000;
-        Configuration.headless = true;
+        Configuration.headless = false;
         Configuration.screenshots = true;
         Configuration.savePageSource = false;
 
