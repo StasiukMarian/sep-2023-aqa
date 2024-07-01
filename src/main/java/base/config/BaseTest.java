@@ -21,7 +21,7 @@ public class BaseTest {
         Configuration.screenshots = true;
         Configuration.savePageSource = false;
 
-        SelenideLogger.addListener("AllureSelenude", new AllureSelenide()
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
                 .savePageSource(false));
     }
