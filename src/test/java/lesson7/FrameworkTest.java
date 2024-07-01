@@ -24,5 +24,6 @@ public class FrameworkTest extends BaseTest {
 //        Pages.mainPage().clickItemHeaderByID(3);
         Pages.mainPage().clickItemHeaderByName("Sauce Labs Bike Light");
 
+        $(byXpath("asd")).click();
     }
 }
