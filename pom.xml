@@ -12,7 +12,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenide>7.3.2</selenide>
+        <selenide>7.3.3</selenide>
         <testng>7.10.2</testng>
         <slf4j>2.0.13</slf4j>
         <logback>1.5.6</logback>

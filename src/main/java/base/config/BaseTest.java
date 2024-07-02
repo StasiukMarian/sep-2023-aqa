@@ -35,15 +35,15 @@ public class BaseTest {
         Selenide.open("https://www.saucedemo.com/");
     }
 
-    @AfterMethod
-    public void cleanWebDriver() {
-        Selenide.clearBrowserCookies();
-        Selenide.refresh();
-        Selenide.open("about:blank");
-    }
-
-    @AfterClass
-    public void tearDown() {
-        Selenide.closeWebDriver();
-    }
+//    @AfterMethod
+//    public void cleanWebDriver() {
+//        Selenide.clearBrowserCookies();
+//        Selenide.refresh();
+//        Selenide.open("about:blank");
+//    }
+//
+//    @AfterClass
+//    public void tearDown() {
+//        Selenide.closeWebDriver();
+//    }
 }
