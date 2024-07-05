@@ -28,6 +28,9 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+        // https://demoqa.com/progress-bar
+        // https://demoqa.com/alerts
+        // http://uitestingplayground.com/shadowdom
         // https://www.stats.govt.nz/large-datasets/csv-files-for-download/ - URL TO DOWNLOAD FILE
         // https://ps.uci.edu/~franklin/doc/file_upload.html - URL TO UPLOAD FILE
         // https://checkcps.com/double-click/ - URL TO DOUBLE CLICK
@@ -35,15 +38,15 @@ public class BaseTest {
         Selenide.open("https://www.saucedemo.com/");
     }
 
-//    @AfterMethod
-//    public void cleanWebDriver() {
-//        Selenide.clearBrowserCookies();
-//        Selenide.refresh();
-//        Selenide.open("about:blank");
-//    }
-//
-//    @AfterClass
-//    public void tearDown() {
-//        Selenide.closeWebDriver();
-//    }
+    @AfterMethod
+    public void cleanWebDriver() {
+        Selenide.clearBrowserCookies();
+        Selenide.refresh();
+        Selenide.open("about:blank");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        Selenide.closeWebDriver();
+    }
 }
