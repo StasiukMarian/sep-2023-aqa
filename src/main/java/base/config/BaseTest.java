@@ -28,6 +28,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+        //https://petstore.swagger.io/
         // https://demoqa.com/progress-bar
         // https://demoqa.com/alerts
         // http://uitestingplayground.com/shadowdom

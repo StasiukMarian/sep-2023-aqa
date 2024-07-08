@@ -20,7 +20,10 @@
         <aspectj.version>1.9.22.1</aspectj.version>
         <restAssured>5.4.0</restAssured>
         <jsonSimple>1.1.1</jsonSimple>
+        <jackson>2.17.1</jackson>
+        <lombok>1.18.32</lombok>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -75,6 +78,23 @@
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>${jsonSimple}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.4.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <build>
