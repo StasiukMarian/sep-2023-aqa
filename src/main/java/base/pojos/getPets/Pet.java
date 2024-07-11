@@ -13,3 +13,4 @@ public class Pet {
     public ArrayList<Tag> tags;
     public String status;
 }
+
